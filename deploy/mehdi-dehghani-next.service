@@ -1,0 +1,17 @@
+[Unit]
+Description=Next.js for mehdi-dehghani.ir
+After=network.target
+
+[Service]
+User=mehdi
+Group=mehdi
+WorkingDirectory=/home/mehdi/sites/mehdi-dehghani.ir
+Environment=NODE_ENV=production
+Environment=PORT=3002
+Environment=HOSTNAME=127.0.0.1
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

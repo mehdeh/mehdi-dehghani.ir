@@ -2,29 +2,34 @@
 
 Personal research site of **Mehdi Dehghani Firouzabadi**.
 
-- Canonical domain: [mehdi-dehghani.ir](https://mehdi-dehghani.ir)
-- Alias: `mehdeh.ir` redirects to the canonical domain
-- Stack (v1): Next.js + TypeScript + Tailwind — no backend
-- Plan: see [`PLAN.md`](./PLAN.md)
+- Site: [mehdi-dehghani.ir](https://mehdi-dehghani.ir)
+- Alias: `mehdeh.ir` → 301 to the canonical domain
+- Stack: Next.js 15 + TypeScript + Tailwind v4 + next-intl (no backend)
+- Plan: [`PLAN.md`](./PLAN.md)
 
-## Local repository
+## Develop
 
+```bash
+cd /home/mehdi/repos/mehdi-dehghani.ir
+npm install
+npm run dev
 ```
-/home/mehdi/repos/mehdi-dehghani.ir/
+
+App: `http://127.0.0.1:3002` — English at `/en`, Persian at `/fa`.
+
+Content lives in `content/`. UI chrome strings live in `messages/`.
+
+## Deploy
+
+```bash
+bash deploy/deploy.sh
 ```
 
-GitHub remote (create this repo under `mehdeh`, empty, no auto README):
+Production path: `/home/mehdi/sites/mehdi-dehghani.ir/`  
+systemd: `mehdi-dehghani-next` on `127.0.0.1:3002`
+
+## GitHub
 
 ```
 git@github.com:mehdeh/mehdi-dehghani.ir.git
 ```
-
-Then:
-
-```bash
-cd /home/mehdi/repos/mehdi-dehghani.ir
-git remote add origin git@github.com:mehdeh/mehdi-dehghani.ir.git
-git push -u origin main
-```
-
-Implementation starts at phase 1. Each phase ends with a git commit.
