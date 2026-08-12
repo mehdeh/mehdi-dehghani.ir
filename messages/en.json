@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Mehdi Dehghani Firouzabadi",
+    "titleTemplate": "%s · Mehdi Dehghani",
+    "description": "AI researcher and developer working on generative models, diffusion, and compact neural architectures."
+  },
+  "nav": {
+    "work": "Work",
+    "about": "About",
+    "publications": "Publications",
+    "teaching": "Teaching",
+    "contact": "Contact",
+    "home": "Home"
+  },
+  "footer": {
+    "note": "Tehran",
+    "resume": "Resume (PDF)"
+  },
+  "home": {
+    "featured": "Selected work",
+    "allWork": "All work",
+    "readCv": "Curriculum vitae",
+    "getInTouch": "Get in touch",
+    "axes": "Focus"
+  },
+  "work": {
+    "title": "Work",
+    "lead": "Personal research code and earlier software. Nothing from the AthenaFin organization appears here.",
+    "repo": "Repository",
+    "demo": "Live demo",
+    "draft": "Lab / draft",
+    "back": "All work"
+  },
+  "about": {
+    "title": "About",
+    "education": "Education",
+    "experience": "Experience",
+    "interests": "Research interests",
+    "skills": "Skills",
+    "honors": "Honors",
+    "academic": "Academic notes",
+    "resume": "Download resume"
+  },
+  "publications": {
+    "title": "Publications",
+    "lead": "Peer-reviewed papers. A thesis paper will sit here when it is out.",
+    "copy": "Copy BibTeX",
+    "copied": "Copied"
+  },
+  "teaching": {
+    "title": "Teaching",
+    "contactCta": "If you want to study together, write."
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "Email is the most reliable way to reach me. Social profiles are listed below.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "elsewhere": "Elsewhere"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "That path does not exist on this site.",
+    "home": "Back home"
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "lang": "Language"
+  }
+}
