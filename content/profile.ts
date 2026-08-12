@@ -3,12 +3,12 @@ import type { Localized, SocialLink } from "./types";
 export const siteUrl = "https://mehdi-dehghani.ir";
 
 export const fullName: Localized<string> = {
-  en: "Mehdi Dehghani Firouzabadi",
+  en: "Mehdi Dehghani Firoozabadi",
   fa: "مهدی دهقانی فیروزآبادی",
 };
 
 export const shortName: Localized<string> = {
-  en: "Mehdi Dehghani",
+  en: "Mehdi Dehghani Firoozabadi",
   fa: "مهدی دهقانی",
 };
 

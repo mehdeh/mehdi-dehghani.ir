@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
-export const alt = "Mehdi Dehghani Firouzabadi";
+export const alt = "Mehdi Dehghani Firoozabadi";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -36,7 +36,7 @@ export default async function OpenGraphImage({
             {isFa ? "پژوهشگر و توسعه‌دهنده هوش مصنوعی" : "AI Researcher & Developer"}
           </div>
           <div style={{ fontSize: 56, marginTop: 16, lineHeight: 1.15 }}>
-            {isFa ? "مهدی دهقانی فیروزآبادی" : "Mehdi Dehghani Firouzabadi"}
+            {isFa ? "مهدی دهقانی فیروزآبادی" : "Mehdi Dehghani Firoozabadi"}
           </div>
           <div style={{ fontSize: 28, marginTop: 24, color: "#9a958c" }}>
             {isFa

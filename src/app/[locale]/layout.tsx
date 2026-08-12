@@ -48,7 +48,7 @@ export async function generateMetadata({
   const isFa = locale === "fa";
   const title = isFa
     ? "مهدی دهقانی فیروزآبادی"
-    : "Mehdi Dehghani Firouzabadi";
+    : "Mehdi Dehghani Firoozabadi";
   const description = isFa
     ? "پژوهشگر و توسعه‌دهنده هوش مصنوعی؛ مدل‌های مولد، انتشار، و معماری‌های عصبی فشرده."
     : "AI researcher and developer working on generative models, diffusion, and compact neural architectures.";
@@ -57,7 +57,7 @@ export async function generateMetadata({
     metadataBase: new URL(siteUrl),
     title: {
       default: title,
-      template: isFa ? "%s · مهدی دهقانی" : "%s · Mehdi Dehghani",
+      template: isFa ? "%s · مهدی دهقانی" : "%s · Mehdi Dehghani Firoozabadi",
     },
     description,
     alternates: {

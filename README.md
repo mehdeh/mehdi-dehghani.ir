@@ -1,6 +1,6 @@
 # mehdi-dehghani.ir
 
-Personal research site of **Mehdi Dehghani Firouzabadi**.
+Personal research site of **Mehdi Dehghani Firoozabadi**.
 
 - Site: [http://mehdi-dehghani.ir](http://mehdi-dehghani.ir) (HTTPS on the origin; public HTTPS after Arvan edge SSL)
 - Alias: `mehdeh.ir` → 301 to the canonical domain

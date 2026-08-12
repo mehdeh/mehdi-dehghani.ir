@@ -26,7 +26,7 @@
 | PDF رزومه | `public/resume.pdf` از `resume_latin.pdf` در GitHub Pages قدیمی |
 | DNS | هر دو دامنه روی آروان (مثل سایت دیگر)؛ مبدأ این VPS |
 | mehdeh.github.io | دست‌نخورده |
-| نام نمایشی | هدر: **Mehdi Dehghani** — قهرمان: نام کامل |
+| نام نمایشی | لاتین: **Mehdi Dehghani Firoozabadi** (هدر و قهرمان یکسان) |
 | بک‌اند | ندارد |
 | AthenaFin | نمی‌آید |
 | کامیت | پایان هر فاز |
