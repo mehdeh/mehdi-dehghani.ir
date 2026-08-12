@@ -121,9 +121,11 @@ public/resume.pdf
                     └─ mehdeh.ir / www.mehdeh.ir → 301 apex (path حفظ می‌شود)
 ```
 
-`bash deploy/deploy.sh` بیلد می‌کند، standalone را به `sites/` می‌برد و سرویس را restart می‌کند.
+`bash deploy/deploy.sh` بیلد می‌کند، standalone را به `sites/` می‌برد و سرویس را restart می‌کند. فایل‌های Nginx در `deploy/` هستند؛ پس از certbot یک‌بار روی سرور نصب شدند.
 
-اگر گواهی Let's Encrypt روی مبدأ گرفته شود، HTTPS مبدأ هم فعال است. لبهٔ آروان باید SSL (حالت Full) داشته باشد تا مرورگر HTTPS ببیند.
+گواهی Let's Encrypt روی **مبدأ** برای هر دو دامنه صادر شده است (تا ۱۰ نوامبر ۲۰۲۶، تمدید خودکار). HTTP روی پورت ۸۰ باز مانده تا آروان بتواند origin را بگیرد.
+
+**HTTPS عمومی** به SSL لبهٔ آروان نیاز دارد (حالت Full، origin همین سرور). تا آن زمان سایت از `http://mehdi-dehghani.ir` در دسترس است — همان الگوی سایت دیگر روی این سرور.
 
 ---
 
