@@ -47,7 +47,7 @@
 |------|----------------|
 | فریم‌ورک | Next.js **15.5.23** (App Router) + React 19 + TypeScript |
 | استایل | Tailwind CSS v4 |
-| i18n | **next-intl 4** با `localePrefix: "always"`؛ ریدایرکت locale نسبی است تا پشت Nginx به `localhost` نرود |
+| i18n | **next-intl 4** با `localePrefix: "always"`؛ ریدایرکت locale با Host عمومی بازنویسی می‌شود |
 | انیمیشن | CSS (`fade-in`) + Canvas 2D؛ کتابخانه Motion اضافه نشد (سبک‌تر) |
 | محتوا | TypeScript در `content/` — MDX لازم نشد |
 | فونت لاتین | **Newsreader** (عنوان) + **Source Sans 3** (متن) |
@@ -164,7 +164,7 @@ public/resume.pdf
 | denoise در خانه و درباره | فقط خانه | امضا یک‌بار کافی است |
 | PDF از GitHub Pages | `resume_latin.pdf` → `public/resume.pdf` | فایل `resume.pdf` در ریپوی قدیمی نبود |
 | DNS مبهم | آروان، مثل دامنهٔ دیگر | هر دو دامنه روی IP آروان بودند |
-| ریدایرکت مطلق next-intl | Location نسبی در middleware | پشت پروکسی، origin داخلی `localhost:3002` بود |
+| ریدایرکت مطلق next-intl | بازنویسی Location با Host/X-Forwarded-* | پشت پروکسی، origin داخلی `localhost:3002` بود |
 
 ---
 
