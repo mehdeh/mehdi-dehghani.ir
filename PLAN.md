@@ -112,6 +112,26 @@ public/resume.pdf
 
 ---
 
+## ۹. مخزن عمومی — نکات امنیتی
+
+مخزن روی GitHub **عمومی** است؛ هر commit در history می‌ماند. نسخهٔ ۱ بدون بک‌اند است و credential در runtime ندارد — با این حال در توسعهٔ بعدی این قواعد ثابت می‌مانند.
+
+| موضوع | قانون |
+|--------|--------|
+| Secret | **هرگز** در مخزن نباشد: `.env`، توکن، API key، رمز SMTP، کلید SSH، `*.pem` |
+| محل secret | فقط روی سرور (فایل env خارج از repo) یا GitHub Actions Secrets — نه در `content/` یا `deploy/` |
+| `.gitignore` | خطوط `.env*` و `*.pem` را حذف یا دور نزن |
+| `NEXT_PUBLIC_*` | فقط مقادیر واقعاً عمومی — هر چیزی در client bundle دیده می‌شود |
+| push اشتباه | secret را **rotate** کن؛ حذف فایل در commit بعدی history را پاک نمی‌کند |
+
+**عمداً عمومی (مشکل نیست):** ایمیل، تلفن و لینک اجتماعی در `content/profile.ts` — همان دادهٔ صفحهٔ تماس. مسیرهای `deploy/` و پورت `3002` روی `127.0.0.1` بدون SSH قابل سوءاستفاده نیستند.
+
+**قبل از هر push:** `git diff` — الگوی `password`، `secret`، `api_key`، `token=`، `BEGIN PRIVATE KEY` نباشد. در GitHub repo **Secret scanning** را فعال نگه دار.
+
+**اگر بک‌اند یا فرم تماس اضافه شد:** SMTP/API key فقط در env سرور؛ Route Handler بدون لاگ کردن secret؛ rate limit روی endpointهای حساس.
+
+---
+
 ## ۱۱–۱۲. دامنه و اجرا
 
 ```
